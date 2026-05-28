@@ -1,0 +1,27 @@
+{
+  "cache_duration": {
+    "description": "数据缓存时长（秒），默认600秒（10分钟）",
+    "type": "int",
+    "default": 600
+  },
+  "request_timeout": {
+    "description": "网络请求超时时间（秒），默认15秒",
+    "type": "int",
+    "default": 15
+  },
+  "enable_schedule": {
+    "description": "是否启用定时推送功能",
+    "type": "bool",
+    "default": false
+  },
+  "schedule_group_id": {
+    "description": "定时推送的目标群ID",
+    "type": "string",
+    "default": ""
+  },
+  "schedule_interval": {
+    "description": "定时间隔（秒），默认3600秒（1小时）",
+    "type": "int",
+    "default": 3600
+  }
+}
