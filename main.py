@@ -36,9 +36,6 @@ class Poe2TimeCheck(Star):
         # 默认配置
         self.cache_duration = 600  # 缓存时长（秒），默认10分钟
         self.request_timeout = 15  # 请求超时时间（秒）
-        self.enable_schedule = False  # 是否启用定时推送
-        self.schedule_group_id = ""  # 定时推送的群ID
-        self.schedule_interval = 3600  # 定时间隔（秒），默认1小时
         
         # 数据源URL
         self.us_url = "https://poe2db.tw/us/"
@@ -63,9 +60,6 @@ class Poe2TimeCheck(Star):
                 plugin_config = config.get("poe2_time_check", {})
                 self.cache_duration = plugin_config.get("cache_duration", 600)
                 self.request_timeout = plugin_config.get("request_timeout", 15)
-                self.enable_schedule = plugin_config.get("enable_schedule", False)
-                self.schedule_group_id = plugin_config.get("schedule_group_id", "")
-                self.schedule_interval = plugin_config.get("schedule_interval", 3600)
                 logger.info(f"[poe2_time_check] 配置已加载: 缓存{self.cache_duration}秒, 超时{self.request_timeout}秒")
         except Exception as e:
             logger.warning(f"[poe2_time_check] 加载配置失败，使用默认配置: {e}")

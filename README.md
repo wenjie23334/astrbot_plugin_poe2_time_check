@@ -28,7 +28,7 @@ pip install httpx beautifulsoup4
 将 `poe2_time_check` 文件夹放入 AstrBot 的插件目录：
 
 ```
-AstrBot/data/plugins/astrbot_plugin_poe2_time_check/
+AstrBot/data/plugins/poe2_time_check/
 ├── main.py
 ├── metadata.yaml
 ├── requirements.txt
@@ -56,9 +56,6 @@ AstrBot/data/plugins/astrbot_plugin_poe2_time_check/
 poe2_time_check:
   cache_duration: 600        # 缓存时长（秒），默认600秒
   request_timeout: 15        # 请求超时时间（秒），默认15秒
-  enable_schedule: false     # 是否启用定时推送
-  schedule_group_id: ""      # 定时推送的目标群ID
-  schedule_interval: 3600    # 定时间隔（秒），默认3600秒
 ```
 
 ### 配置项详解
@@ -67,9 +64,6 @@ poe2_time_check:
 |--------|------|--------|------|
 | `cache_duration` | int | 600 | 数据缓存时长，避免频繁请求数据源 |
 | `request_timeout` | int | 15 | 网络请求超时时间 |
-| `enable_schedule` | bool | false | 是否启用定时推送功能 |
-| `schedule_group_id` | string | "" | 定时推送的目标群聊ID |
-| `schedule_interval` | int | 3600 | 定时推送间隔（秒） |
 
 ## 页面解析逻辑
 

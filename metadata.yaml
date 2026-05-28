@@ -2,7 +2,7 @@ name: poe2_time_check
 display_name: 流放之路2时间查询
 desc: 查询流放之路2(Path of Exile 2)国际服和腾讯国服的开服时间、服务器状态、赛季倒计时信息
 short_desc: PoE2 服务器状态与开服时间查询
-author: poe2time
+author: wenjie
 version: 1.0.0
 repo: https://github.com/poe2time/astrbot_plugin_poe2_time_check
 support_platforms:
