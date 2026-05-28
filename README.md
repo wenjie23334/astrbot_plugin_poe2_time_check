@@ -28,7 +28,7 @@ pip install httpx beautifulsoup4
 将 `poe2_time_check` 文件夹放入 AstrBot 的插件目录：
 
 ```
-AstrBot/data/plugins/poe2_time_check/
+AstrBot/data/plugins/astrbot_plugin_poe2_time_check/
 ├── main.py
 ├── metadata.yaml
 ├── requirements.txt
